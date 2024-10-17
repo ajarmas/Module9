@@ -1,0 +1,425 @@
+/*Andrew Armas. WEB 210 - Module 9*/
+
+/*
+Color Palette
+
+Dark Slate Green    #283d3b
+Caribbean Current   #197278
+Cream               #fbf5ee
+Bright Red          #c44536
+Burgundy            #772E25
+*/
+
+/* GLOBAL STYLES (GS)
+-------------------------- */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*setting default to 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+
+body {
+    background: linear-gradient(to bottom, #fbf5ee 40% , #197278 );
+    background-attachment: scroll;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+
+/*Drop Down Nav*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #772E25;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .drop-button {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .drop-button {
+    color: white;
+  }
+  
+  .navbar a:hover, .dropdown:hover .drop-button {
+    background-color: #197278;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #283d3b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: #c44536;
+    background-color: #ddd;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/*GS-Headers*/
+h1, h2 {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6.5rem;
+    line-height: 1;
+    /*Background Effect from https://www.letsbuildui.dev/articles/css-text-effects-five-minimal-examples/ */
+    background: linear-gradient(to right, #197278 40%, #772E25 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 60%;
+    color: transparent;
+}
+
+h2 {
+    font-size: 3.8rem;
+    color: #283d3b;
+}
+
+h2:first-child {
+    color:#197278;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 0.5;
+    color: #c44536;
+}
+
+@media screen and (max-width:569px) {
+    .home header::before {
+        height: 200px;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        padding-bottom: 10px;
+    }
+    h2 {
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+    h3 {
+        line-height: 1;
+    }
+}
+
+/*GS-links*/
+a {
+    color: #197278;
+}
+
+
+/*GS-footer*/
+footer a {
+    color: #fbf5ee;
+}
+
+footer a:hover {
+    color: #c44536;
+    text-decoration: none;
+}
+
+/*GS-Button*/
+.btn {
+    background: #283d3b;
+    color: #fbf5ee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: .05em;
+    line-height: 1;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: #772E25;
+    color: #fbf5ee;
+    box-shadow: 0 4px 15px #19727880;
+}
+
+/* HOME 
+---------------------------*/
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+header .content-wrapper {
+    padding-bottom: 20px;
+    border-bottom-style: double;
+    border-color: #772E25;
+    border-width: 8px;
+    flex: 1 0 auto;
+}
+
+.home header::before {
+    background: url(../images/kai-dahms-97yTozZh7N8-unsplash\ edited.jpg) bottom;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+.content-wrapper {
+    background: rgb(255 255 255 / 0.95);
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+.home-section {
+    margin-bottom: 50px;
+}
+
+.home-section h2 {
+    border-bottom: 2px dashed #772E25;
+}
+
+.home-section a:first-child:hover {
+    color: #c44536;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* PROFILE 
+---------------------------*/
+
+.download-link {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width:1330px) {
+    .download-link {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:488px) and (max-width:772px) {
+    .download-link {
+        position: absolute;
+        top: 110px;
+    }
+}
+
+@media screen and (max-width:487px) {
+    .download-link {
+        position: absolute;
+        top: 155px;
+    }
+}
+
+
+/* PROJECTS 
+---------------------------*/
+.project-item {
+    margin: 40px 0;
+}
+
+.project-item:first-of-type {
+    margin-top: 0px;
+}
+
+.project-item img {
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width:880px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width:655px) and (max-width:879px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+    .project-item {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:654px) {
+    .project-item img {
+        width: 100%;
+    }
+}
+
+
+/* WORK EXPERIENCE 
+---------------------------*/
+
+
+.work-details h3 {
+    margin-bottom: 15px;
+}
+
+.work-details p {
+    margin: 0;
+}
+
+.work-duties {
+margin-top: 20px;
+}
+
+.work-duties h4 {
+    text-decoration: underline;
+    margin: 0;
+}
+
+.work-duties p {
+    margin: 5px 0;
+    text-decoration: underline;
+}
+
+.work-duties ul {
+    margin: 0;
+}
+
+@media screen and (min-width:790px) {
+    .work-items {
+        display: grid;
+        grid-template-columns: 325px 1fr;
+        column-gap: 15px;
+    }
+}
+
+
+/* EDUCATION 
+---------------------------*/
+.education-item h3 {
+    margin: 30px 0 12px 0 
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.education-item p:first-of-type {
+    font-weight: 700;
+}
+
+
+/* FOOTER 
+---------------------------*/
+footer {
+    background: #283d3b;
+    color: #fbf5ee;
+    border-top: 5px solid #c44536;
+  
+}
+
+#footer-header {
+    color: #fbf5ee;
+}
+
+#footer-header {
+    font-size: large;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.75;
+}
+
+@media screen and (min-width:715px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:714px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
