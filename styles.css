@@ -341,11 +341,6 @@ margin-top: 20px;
     margin: 0;
 }
 
-.work-duties p {
-    margin: 5px 0;
-    text-decoration: underline;
-}
-
 .work-duties ul {
     margin: 0;
 }
@@ -385,11 +380,10 @@ footer {
 
 #footer-header {
     color: #fbf5ee;
+    font-size: large;
+    padding-top: 10px;
 }
 
-#footer-header {
-    font-size: large;
-}
 
 .socials {
     list-style-type: none;
@@ -398,7 +392,7 @@ footer {
 
 .socials li {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .socials img {

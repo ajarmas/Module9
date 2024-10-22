@@ -73,27 +73,47 @@
         <p>View selected projects below. More information can be found at <a href="https://www.aarmasdesign.com">aarmasdesign.com</a>.
         </p>
 
-        <section class="project-item">
-          <img src="images/Secondlife-thumbnail-500px.png" srcset="images/Secondlife-thumbnail-1000px.png" alt="Thumbnail of Second Life Thrift Store branding">
-          <h3>Second Life Thrift Store</h3>
-          <p>This was a case study in which the client was Second Life Thrift Store, a pop-up shop featuring sustainable fashion. For this case study, I acted as Creative Director and was primarly responsible for the logo and branding for Second Life.</p>
-          <a class="btn" href="#" target="_blank">Case Study</a>
-        </section>
+        <div class="project-wrapper">
+          <section class="project-item">
+            <picture>
+              <source media="(max-width: 500px)" srcset="images/Secondlife-thumbnail-200px.png">
+              <source media="(max-width: 1000px)" srcset="images/Secondlife-thumbnail-500px.png">
+              <source srcset="images/Secondlife-thumbnail-1000px.png">
+              <img src="images/Secondlife-thumbnail-500px.png"
+                alt="Thumbnail of Second Life Thrift Store branding">
+            </picture>
+            <h3>Second Life Thrift Store</h3>
+            <p>This was a case study in which the client was Second Life Thrift Store, a pop-up shop featuring sustainable fashion. For this case study, I acted as Creative Director and was primarly responsible for the logo and branding for Second Life.</p>
+            <a class="btn" href="#" target="_blank">Case Study</a>
+          </section>
 
-        <section class="project-item">
-          <img src="images/ThinkBigCon-Thumbnail-500px.png" srcset="images/ThinkBigCon-Thumbnail-1000px.png 2x" alt="Thumbnail of Think Big Conference branding">
-          <h3>Think Big Conference</h3>
-          <p>For this project, I was tasked with creating a logo, brand guide, promotional and advertising materials. The "Think Big Conference" is a dynamic gathering tailored for artistic entrepreneurs seeking to blend their creative talents with business acumen.</p>
-          <a class="btn" href="#" target="_blank">View Project</a>
-        </section>
+          <section class="project-item">
+            <picture>
+              <source media="(max-width: 500px)" srcset="images/ThinkBigCon-Thumbnail-200px.png">
+              <source media="(max-width: 1000px)" srcset="images/ThinkBigCon-Thumbnail-500px.png">
+              <source srcset="images/ThinkBigCon-Thumbnail-1000px.png">
+              <img src="images/ThinkBigCon-Thumbnail-500px.png"
+                alt="Thumbnail of Think Big Conference branding">
+            </picture>
+            <h3>Think Big Conference</h3>
+            <p>For this project, I was tasked with creating a logo, brand guide, promotional and advertising materials. The "Think Big Conference" is a dynamic gathering tailored for artistic entrepreneurs seeking to blend their creative talents with business acumen.</p>
+            <a class="btn" href="#" target="_blank">View Project</a>
+          </section>
 
-        <section class="project-item">
-          <img src="images/apotherie-thumbnail-500px.png" srcset="images/apotherie-thumbnail-1000px.png" alt="Thumbnail of Apotherie Spa branding">
-          <h3>Apotherie Spa</h3>
-          <p>For this project, I was tasked with the creation of the logo, branding, booklet, intake form, large format print and product packaging. The client was "Apthorie Spa & Wellness Center" that focused on modern, boho and organic imagery, practices and treatments.</p>
-          <a class="btn" href="#" target="_blank">View Project</a>
-        </section>
-        <!-- End of Project block. -->
+          <section class="project-item">
+            <picture>
+              <source media="(max-width: 500px)" srcset="images/apotherie-thumbnail-200px.png">
+              <source media="(max-width: 1000px)" srcset="images/apotherie-thumbnail-500px.png">
+              <source srcset="images/apotherie-thumbnail-1000px.png">
+              <img src="images/apotherie-thumbnail-500px.png"
+                alt="Thumbnail of Apotherie Spa branding">
+            </picture>           
+            <h3>Apotherie Spa</h3>
+            <p>For this project, I was tasked with the creation of the logo, branding, booklet, intake form, large format print and product packaging. The client was "Apthorie Spa & Wellness Center" that focused on modern, boho and organic imagery, practices and treatments.</p>
+            <a class="btn" href="#" target="_blank">View Project</a>
+          </section>
+        </div>
+
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
@@ -102,7 +122,8 @@
         <!--<p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>-->
 
         <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
+
+        <section class="work-items">
           <div class="work-details">
             <h3>Production Supervisor</h3>
             <p>Martin Marietta Center for the Performing Arts</p>
@@ -111,7 +132,7 @@
           </div>
 
           <div class="work-duties">
-            <p>Job Duties:</p>
+            <h4>Job Duties:</h4>
               <ul>
                 <li>Plan, coordinate, and oversee event logistics.</li>
                 <li>Meets with clients to determine event requirements; equipment, support staff, scheduling, production, and security needs.</li>
@@ -122,7 +143,6 @@
                 <li>Monitor and maintain City of Raleigh equipment, supplies, and materials inventories.</li>
               </ul>
           </div>
-
         </section>
         <!-- End of Job block. -->
       </section>
@@ -156,12 +176,14 @@
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-        <h2 id="footer-header">Let's Keep in Touch!</h2>
+        <div>
+          <h2 id="footer-header">Let's Keep in Touch!</h2>
+          <a href="mailto:email@example.com">andrewjarmas@gmail.com</a>
+          <a href="https://www.aarmasdesign.com" target="_blank">aarmasdesign.com</a>
+        </div>
 
         <!-- Social media and contact links. Add or remove any networks. -->
         <ul class="socials">
-          <li><a href="mailto:email@example.com">andrewjarmas@gmail.com</a></li>
-          <li><a href="https://www.aarmasdesign.com" target="_blank">aarmasdesign.com</a></li>
           <li><a href="https://x.com/AndrewJArmas" target="_blank"><img src="images/icon-logo-x.png" alt="My X channel"></a></li>
           <li><a href="https://www.linkedin.com/in/andrew-armas-670b5a212/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn page"></a></li>
           <li><a href="#" target="_blank"><img src="images/icon-logo-instagram.png" alt="My Instagram profile"></a></li>
